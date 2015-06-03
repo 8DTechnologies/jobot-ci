@@ -1,0 +1,41 @@
+{
+  "name": "jobot-ci",
+  "version": "0.0.0",
+  "description": "Continuous Integration test reporter",
+  "author": {
+    "name": "8D Technologies",
+    "email": ""
+  },
+  "repository": "scboucher/jobot-ci",
+  "license": "MIT",
+  "main": "index.coffee",
+  "keywords": [
+    "jobot-ci",
+    "jobot",
+    "hubot",
+    "jenkins",
+    "hudson",
+    "teamcity"
+  ],
+  "dependencies": {
+    "eyes": "^0.1.8",
+    "lodash": "^3.9.3",
+    "moment": "^2.10.3",
+    "natural-compare-lite": "^1.3.1",
+    "node-xmpp": "^1.0.0-alpha2",
+    "util": "^0.10.3"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-mocha-cli": "^1.12.0",
+    "jshint-stylish": "^1.0.1",
+    "load-grunt-tasks": "^3.1.0",
+    "time-grunt": "^1.1.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  }
+}
