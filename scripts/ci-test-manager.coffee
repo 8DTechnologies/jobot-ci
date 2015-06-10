@@ -53,7 +53,7 @@ class CITestManager
     @state = {}
 
     @hudson = new CIConnection( if process.env.HUDSON=='true' then process.env.HUDSON_TEST_MANAGER_URL else process.env.TEAMCITY_TEST_MANAGER_URL )
-    @robot.logger.error @hudson, process.env.HUDSON
+    @robot.logger.info "url: #{@hudson}, using hudson : #{process.env.HUDSON}"
     @backend = require( './ci-test-manager/backend' )( @robot, @hudson ) unless @backend
 
     # Setup "routes":

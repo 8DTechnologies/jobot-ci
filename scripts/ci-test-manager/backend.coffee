@@ -96,7 +96,7 @@ class CITestManagerBackendSingleton
           delete projectname['nextbroadcasttime']
         else if  moment().diff( projectname['nextbroadcasttime'], unit ) >= 0 or not projectname['nextbroadcasttime']?
           @emit 'testunassigned', project, unassignedsincetest, null  if projectname['nextbroadcasttime']?
-          projectname['nextbroadcasttime'] = moment().add( 'm', offset )
+          projectname['nextbroadcasttime'] = moment().add( offset, 'm' )
           offset += factor
 
     #  Check and notifyTestStillFail() if testfail past warning or escalade threshold
