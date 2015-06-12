@@ -15,6 +15,8 @@ Jobot-ci uses restAPI from TeamCity or Hudson and send to chatroom the result of
 Users can assign failing tests to other developers.
 See [ci-test-manager](/scripts/ci-test-manager.coffee) for full documentation
 
+##Known Issue
+Jobot-ci doesn't work with Hubot 2.13 and higher
 
 ## License
 
